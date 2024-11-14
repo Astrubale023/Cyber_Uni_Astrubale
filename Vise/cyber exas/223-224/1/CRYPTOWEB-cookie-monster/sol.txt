@@ -1,0 +1,2 @@
+when i open the file, i go on the inspector, see in the cookies section that there is a cookie called permission, so i saw it, and it seemed that or it was HEX or sha256, I tried both and sha256 was the right one. it means: user, so i thought that maybe 'admin' was the solution, but in sha256. it was correct: 
+spritz{thank_you_for_the_cookie}

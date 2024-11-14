@@ -1,0 +1,3 @@
+SPRITZCTF={webgame2020_03}
+
+vabe

@@ -1,0 +1,7 @@
+if you mess some bytes around, you might print the flag :)
+
+
+0x0804A028	(Fscanf)
+0x080485c6	(winx)
+
+0x0804A01C	(exit)

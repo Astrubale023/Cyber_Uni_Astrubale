@@ -1,0 +1,5 @@
+soluzione:
+
+change op code of the if conditions, or better, on the jump condition.
+
+Flag{P00r_45_DuCk} 

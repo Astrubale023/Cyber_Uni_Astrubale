@@ -1,0 +1,15 @@
+Ci chiedono di entrare nell'account mail di un certo John Galt.
+L'username è intuibile, 'john galt'. Invece per la password ci sono due
+metodi.
+
+[METODO 1]
+usiamo nuovamente il comando strings e cerchiamo un qualcosa di sospetto,
+troveremo quindi "this-password-is-secret-to-everyone!" e sarà la psw
+
+[METODO 2]
+Questo metodo consiste nell'usare ltrace, usate per tracciare e intercettare
+chiamate dinamiche da parte del sistema
+
+[CONCLUSIONE]
+Una volta entrati ci chiede di visualizzare le email (1) o uscire (2), se
+decidiamo di curiosare tra le mail troviamo la flag

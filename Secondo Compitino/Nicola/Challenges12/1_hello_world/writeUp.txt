@@ -1,0 +1,19 @@
+[METODO 1]
+Si può fare molto facilmente con un:
+$ string hellow_world
+e cerchi la stringa flag
+
+[METODO 2]
+Scrivere
+$ objdump -d hello_world
+che in pratica è un piccolo disassembler.
+Si nota poi che ci sono di seguito tre funzioni leggibili, ovvero:
+-Puts -> "Inserisci pin ..."
+-Gets -> prende il valore che inseriamo
+-Printf -> "hai inserito ..."
+
+Tra il Gets e il Printf possiamo accorgerci di diversi cmp e poi dei jne,
+tutti con i jump nella stessa parte del main.
+I cmp sono 4 e comparano un qualcosa con un numero/lettere scritto in ASCII.
+Probabilmente si tratta della check password, se traduciamo i numeri i vari
+caratteri alfanumerici traviamo che la password è: "Fl4g"

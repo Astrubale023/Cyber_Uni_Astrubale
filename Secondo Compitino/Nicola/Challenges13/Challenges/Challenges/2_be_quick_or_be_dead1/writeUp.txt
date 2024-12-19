@@ -1,0 +1,16 @@
+Qui abbiamo un programma che non richiede alcun input, sembra faccia dei
+calcoli ma poi ci dice che il nostro computer è troppo lento.
+
+Apriamolo su IDA notiamo due funz importanti:
+- set_timer > quindi c'è un timer
+- get_key > fa dei calcoli per trovare una chiave
+
+Sembra quindi che get_key faccia continuamente dei calcoli e che però il
+timer finisca prima e per questo ci dice che il nostro computer è lento.
+
+Se andassimo a modificare la jnz del for di calculate_key (dentro a get_key)
+saltiamo fuori dal for ma con la chiave appena inizializzata e così ci
+printerà la flag ma in modo illeggibile.
+
+Per questo andiamo direttamente nel main e togliamo tutte le istruzioni del
+timer, da appena dopo header fino a prima di get_key, con del nop (opc 90).

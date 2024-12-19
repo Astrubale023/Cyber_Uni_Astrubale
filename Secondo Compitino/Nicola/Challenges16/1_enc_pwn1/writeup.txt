@@ -1,0 +1,16 @@
+Avviando il programma ci viene chiesto di inserire il nostro nome, ovvero
+un'operazione di input, probabilmente il punto vulnerabile del codice.
+
+Andiamo allora su IDA e ci accorgiamo che infatti viene istanziato un array
+di 128 char, il quale sarà salvato nel buffer.
+
+Andiamo a di debugger, e inserendo "cyclic 200" nella richiesta di input
+vediamo che il problema è la sottostring kaab
+
+se cerchiamo con il comando "cyclic -l kaab" pwndbg ci dice che in posizione
+140, quindi dal a distanza di 140 byte dall'inizio della buffer input c'è
+l'indirizzo di ritorno del main, che noi vogliamo andare a sovrascrivere con
+l'indirizzo della funziona shell.
+
+Scriviamo il programma in python per semplificarci le cose e una volta
+dentro la shell, con ls e poi cat printiamo la flag

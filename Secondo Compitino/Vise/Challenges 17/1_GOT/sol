@@ -1,0 +1,7 @@
+allora:
+gdb auth.
+guardalo in IDA
+entra dentro la GOT cercandola;
+runna, e metti l'indiirzzo, tipo di una put che trovi nella got e poi metterai quella della win che trovi
+disassemblandola;
+poi usi, dentro la bash 'cat flag.txt'

@@ -1,0 +1,18 @@
+Qui iniziamoad usare IDA, se lo apriamo ci troviamo davanti ad un main,
+e ad un certo punto troviamo un blocco di codice con le stringhe che vediamo
+printate. Concentriamoci là.
+
+Dopo l'input vengono chiamate diverse funzioni, ognuna corrispende alle
+7 fasi di disinnesco della bomba (noi dobbiamo farne solo 4)
+
+[FASE 1]
+Clicchiamo su phase1 e vediamo che viene settata una stringa per
+il successivo cmp, la stringa è
+"Border relations with Canada have never been better."
+
+[FASE 2]
+Clicchiamo su phase2
+Ci sono una serie di cmp e utilizzo dello stack pointer
+alla fine si arriva a: "1 2 4 8 16 32"
+
+[FASE 3]

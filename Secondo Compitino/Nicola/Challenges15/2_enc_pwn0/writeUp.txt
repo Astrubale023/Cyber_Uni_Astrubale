@@ -1,0 +1,8 @@
+Aprendo il .c possiamo notare come funziona, ovvero ci sono due buffer e
+uno dei due poi viene confrontato con la stringa "H!igh", solo che a noi
+viene chiesto l'input per quello non confrontato.
+
+Però sappiamo che si trova subito dopo il buffer di size 64, quindi
+possiamo fare un buffer overflow e andarlo a sovrascrivere.
+
+Il codice si trova su solution.py

@@ -1,0 +1,2 @@
+Una soluzione facile e veloce è quella di aprire il file su IDA e nella
+funzione print flag c'è la flag sotto formato di string

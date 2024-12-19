@@ -1,0 +1,5 @@
+Iniziamo con i buffer overflow. Guardando dal .c notiamo che abbiamo un buff
+di 8 caratteri e una variabile pass.
+
+Se quindi inseriamo più di 8 caratteri, ad esempio 9 in questo caso,
+riusciamo a far cambiare valore a pass così facendo risulta true l'if

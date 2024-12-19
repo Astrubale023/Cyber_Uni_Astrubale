@@ -1,0 +1,10 @@
+can you spawn a shell and get the flag?
+
+0x0804854b
+
+0x0804A020	(print)
+0X0804A00C	(PUTS)
+
+WRITE-UP
+Apri l'exec con ida, trova un indirizza della GOT da sostituire, con una vulnerabilità sostiuisci quell'indirizzo con l'indirizzo utile (in questo caso scegliamo la funz put per la GOT e della funz win per la flag).
+Così al prossimo puts si avvierà la fun win. Da lì sei in una shell e in qualche modo printi una flag

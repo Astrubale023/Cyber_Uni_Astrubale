@@ -1,0 +1,8 @@
+Il nostro amicone John Galt ha di nuovo problemi ad entrare con la mail,
+il nome utente lo sappiamo già ("john galt") ma per la psw non sappiamo un
+bel niente.
+Ci dicono che non è colpa sua se non può più accedere, infatti se proviamo
+di nuovo strings sul file e troviamo la posizione dove nello scorso funmail
+c'era la psw, c'è una stringa che se inserita non funzia bene.
+
+Andiamo quindi di debugger.

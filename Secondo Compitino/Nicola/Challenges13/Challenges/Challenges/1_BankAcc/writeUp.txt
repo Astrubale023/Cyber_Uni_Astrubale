@@ -1,0 +1,21 @@
+Quando eseguiamo il programma e inseriamo qualcosa ci continua a dire che
+abbiamo sbagliato e che il PIN corretto era un numero casuale (perchè è
+così effettivamente).
+Quindi andiamo su IDA e vediamo che c'è poco che possiamo fare per capire a
+run-time che cosa dovremmo inserire.
+
+Per questo dobbiamo a fare un patch al programm, andando a cambiare il jnz
+del primo blocco del programma con un jz in questo modo se sbagliamo psw
+è come se facessimo giusto.
+
+Andiamo su Options>Generals e nel menu che ci appare spuntiamo la voce
+"stack pointer" e su "number of opcode bytes" scriviamo 8.
+
+In questo modo possiamo vedere gli opcode in hex.
+jnz = 75
+jz = 74
+
+Andiamo allora su Edit>Patch_Program>Change_Byte e SOLO al posto del 75
+scriviamo 74
+
+Poi Edit>Patch_program>Apply_Patch_to_input_file

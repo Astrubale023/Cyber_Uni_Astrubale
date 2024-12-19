@@ -1,0 +1,1 @@
+Metti un breakpoint in main + 0x7b, esegui, quando colpisce il breakpoint, chiedi a gdb di stamparti t + 10

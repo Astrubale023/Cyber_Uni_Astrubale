@@ -6,3 +6,7 @@ Provides several exercise with their solutions
 [text](https://github.com/obviouslynotraffa/Cybersecurity)
 ### -_Constastrini_
 [text](https://github.com/alessandrocontarini/2challenge)
+
+________________________________________________
+Comando nuovo super ripasso sgravato:
+checksec --file=split

@@ -5,4 +5,9 @@ Ci dicono che non è colpa sua se non può più accedere, infatti se proviamo
 di nuovo strings sul file e troviamo la posizione dove nello scorso funmail
 c'era la psw, c'è una stringa che se inserita non funzia bene.
 
-Andiamo quindi di debugger.
+La soluzione è facile, aprimo il file:
+$ gdb funmail2.0
+$ b* main
+(o comunque in un punto nel main)
+$ r
+$ jump printFlag
